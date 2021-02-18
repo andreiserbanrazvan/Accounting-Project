@@ -2,6 +2,7 @@
 using System.Data.OleDb;
 using System.Configuration;
 using System.Data;
+using System.Windows.Forms;
 
 namespace Accounting_Project.Project
 {
@@ -30,6 +31,7 @@ namespace Accounting_Project.Project
             {
                 MainFrm F = new MainFrm();
                 F.Show();
+                F.Login_lb.Text = User_tx.Text;  
                 this.Hide();
             }
             else
@@ -37,7 +39,14 @@ namespace Accounting_Project.Project
                 MetroFramework.MetroMessageBox.Show(this, "Wrong User Name and Password !", "Information", System.Windows.Forms.MessageBoxButtons.OK,
                     System.Windows.Forms.MessageBoxIcon.Information);
                 User_tx.Clear();
+                Pwd_tx.Clear();
+                User_tx.Focus();
             }
+        }
+
+        private void Exit_bt_Click(object sender, System.EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

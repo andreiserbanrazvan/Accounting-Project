@@ -57,6 +57,7 @@ namespace Accounting_Project.Project
             this.Exit_bt.Text = "Exit";
             this.Exit_bt.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.Exit_bt.UseSelectable = true;
+            this.Exit_bt.Click += new System.EventHandler(this.Exit_bt_Click);
             // 
             // metroLabel1
             // 
@@ -108,7 +109,7 @@ namespace Accounting_Project.Project
             this.User_tx.SelectionLength = 0;
             this.User_tx.SelectionStart = 0;
             this.User_tx.ShortcutsEnabled = true;
-            this.User_tx.Size = new System.Drawing.Size(253, 23);
+            this.User_tx.Size = new System.Drawing.Size(259, 23);
             this.User_tx.TabIndex = 4;
             this.User_tx.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.User_tx.UseSelectable = true;
@@ -142,7 +143,7 @@ namespace Accounting_Project.Project
             this.Pwd_tx.SelectionLength = 0;
             this.Pwd_tx.SelectionStart = 0;
             this.Pwd_tx.ShortcutsEnabled = true;
-            this.Pwd_tx.Size = new System.Drawing.Size(253, 23);
+            this.Pwd_tx.Size = new System.Drawing.Size(262, 23);
             this.Pwd_tx.TabIndex = 5;
             this.Pwd_tx.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.Pwd_tx.UseSelectable = true;

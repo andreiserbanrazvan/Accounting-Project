@@ -146,11 +146,35 @@
       <DependentUpon>UserManagmentFrm.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\ExpenseRpt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\ExpenseRpt.Designer.cs">
+      <DependentUpon>ExpenseRpt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\IncomeRpt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\IncomeRpt.Designer.cs">
+      <DependentUpon>IncomeRpt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\PurchaseBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\PurchaseBill.Designer.cs">
+      <DependentUpon>PurchaseBill.cs</DependentUpon>
+    </Compile>
     <Compile Include="Reports\PurchaseReport.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Reports\PurchaseReport.Designer.cs">
       <DependentUpon>PurchaseReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\SaleBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\SaleBill.Designer.cs">
+      <DependentUpon>SaleBill.cs</DependentUpon>
     </Compile>
     <Compile Include="Reports\SaleReport.cs">
       <SubType>Form</SubType>
@@ -169,6 +193,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Project\MainFrm.resx">
       <DependentUpon>MainFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\ProductEntryFrm.resx">
+      <DependentUpon>ProductEntryFrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

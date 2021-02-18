@@ -35,6 +35,9 @@ namespace Accounting_Project.Project
             this.Expense_Tl = new MetroFramework.Controls.MetroTile();
             this.SaleRpt_Tl = new MetroFramework.Controls.MetroTile();
             this.PurchaseRpt_Tl = new MetroFramework.Controls.MetroTile();
+            this.Login_lb = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
+            this.Product_tl = new MetroFramework.Controls.MetroTile();
             this.SuspendLayout();
             // 
             // Sale_Tl
@@ -115,11 +118,54 @@ namespace Accounting_Project.Project
             this.PurchaseRpt_Tl.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Regular;
             this.PurchaseRpt_Tl.UseSelectable = true;
             // 
+            // Login_lb
+            // 
+            this.Login_lb.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Login_lb.AutoSize = true;
+            this.Login_lb.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.Login_lb.FontWeight = MetroFramework.MetroLabelWeight.Regular;
+            this.Login_lb.Location = new System.Drawing.Point(689, 32);
+            this.Login_lb.Name = "Login_lb";
+            this.Login_lb.Size = new System.Drawing.Size(64, 25);
+            this.Login_lb.TabIndex = 9;
+            this.Login_lb.Text = ".............";
+            this.Login_lb.Theme = MetroFramework.MetroThemeStyle.Dark;
+            // 
+            // metroLabel3
+            // 
+            this.metroLabel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.metroLabel3.AutoSize = true;
+            this.metroLabel3.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.metroLabel3.FontWeight = MetroFramework.MetroLabelWeight.Regular;
+            this.metroLabel3.Location = new System.Drawing.Point(635, 32);
+            this.metroLabel3.Name = "metroLabel3";
+            this.metroLabel3.Size = new System.Drawing.Size(62, 25);
+            this.metroLabel3.TabIndex = 8;
+            this.metroLabel3.Text = "Log In";
+            this.metroLabel3.Theme = MetroFramework.MetroThemeStyle.Dark;
+            // 
+            // Product_tl
+            // 
+            this.Product_tl.ActiveControl = null;
+            this.Product_tl.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.Product_tl.Location = new System.Drawing.Point(26, 72);
+            this.Product_tl.Name = "Product_tl";
+            this.Product_tl.Size = new System.Drawing.Size(186, 72);
+            this.Product_tl.TabIndex = 10;
+            this.Product_tl.Text = "Product Entry";
+            this.Product_tl.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
+            this.Product_tl.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Regular;
+            this.Product_tl.UseSelectable = true;
+            this.Product_tl.Click += new System.EventHandler(this.Product_tl_Click);
+            // 
             // MainFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(840, 489);
+            this.Controls.Add(this.Product_tl);
+            this.Controls.Add(this.Login_lb);
+            this.Controls.Add(this.metroLabel3);
             this.Controls.Add(this.PurchaseRpt_Tl);
             this.Controls.Add(this.SaleRpt_Tl);
             this.Controls.Add(this.Expense_Tl);
@@ -132,6 +178,7 @@ namespace Accounting_Project.Project
             this.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -143,5 +190,8 @@ namespace Accounting_Project.Project
         private MetroFramework.Controls.MetroTile Expense_Tl;
         private MetroFramework.Controls.MetroTile SaleRpt_Tl;
         private MetroFramework.Controls.MetroTile PurchaseRpt_Tl;
+        private MetroFramework.Controls.MetroLabel metroLabel3;
+        public MetroFramework.Controls.MetroLabel Login_lb;
+        private MetroFramework.Controls.MetroTile Product_tl;
     }
 }
